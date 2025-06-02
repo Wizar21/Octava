@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Octava — музыкальный магазин</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="header">
+  <div class="container header-container">
+    <div class="logo">
+      <img src="img/logo.png" alt="Octava логотип" />
+    </div>
+    <nav class="nav">
+  <button class="menu-toggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="menu-list">☰</button>
+  <ul class="menu-list" id="menu-list">
+    <li><a href="#">Главная</a></li>
+    <li><a href="#">Каталог</a></li>
+    <li><a href="#">О нас</a></li>
+    <li><a href="#">Гарантия</a></li>
+  </ul>
+</nav>
+    <div class="header-icons">
+      <div class="icon-link">
+        <i class="fas fa-user"></i>
+        <a href="#">Войти</a>
+        <i class="fas fa-heart"></i>
+        <a href="#">Избранное</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+  <main >
+    <div class="hero">
+  <div class="overlay">
+    <div class="hero-content">
+      <h1>Музыкальный магазин <span class="brand">Octava</span></h1>
+      <p>У нас вы найдете то, что вам нужно</p>
+      <button class="cta-button">Перейти к товарам</button>
+    </div>
+  </div>
+  <p class="quality-note">100% гарантия качества</p>
+    </div>
+    <div class="section-divider"></div>
+
+<section class="back">
+
+  <div class="advantages">
+    <h2 class="advantages__title">Преимущества Octava</h2>
+    <p class="advantages__subtitle">Почему выбирают нас?</p>
+    <div class="advantages__wrapper">
+      <div class="advantages__item">Большой выбор музыкальных инструментов и не только</div>
+      <div class="advantages__item">Довольно приемлемые цены</div>
+      <div class="advantages__item">Быстрая доставка по всей РФ</div>
+      <div class="advantages__item">Гарантия качества 1 год</div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<section class="best-sellers-section">
+  <h2 class="section-title">Хиты продаж</h2>
+  <div class="best-sellers-slider">
+    <button class="nav prev" aria-label="Предыдущий товар">&#8592;</button>
+    <div class="slider-track">
+      <article class="product">
+        <img src="img/гитара  1.png" alt="Электронная гитара JET JT-30 Gold" />
+        <p class="price">69 400 ₽</p>
+        <h3 class="product-name">Электронная гитара<br>JET JT-30 Gold</h3>
+        <button class="btn">В корзину</button>
+      </article>
+      <article class="product">
+        <img src="img/эффект1.png" alt="Гитарный эффект BEHRINGER CS400" />
+        <p class="price">2 990 ₽</p>
+        <h3 class="product-name">Гитарный эффект<br>BEHRINGER CS400</h3>
+        <button class="btn">В корзину</button>
+      </article>
+      <article class="product">
+        <img src="img/гитара2.png" alt="Акустическая гитара Caraya F630-N" />
+        <p class="price">8 740 ₽</p>
+        <h3 class="product-name">Акустическая гитара<br>Caraya F630-N</h3>
+        <button class="btn">В корзину</button>
+      </article>
+      <article class="product">
+        <img src="img/колонка.png" alt="Колонка" />
+        <p class="price">16 800 ₽</p>
+        <h3 class="product-name">Колонка<br>для гитары</h3>
+        <button class="btn">В корзину</button>
+      </article>
+      <article class="product">
+        <img src="img/струн.png" alt="Струны" />
+        <p class="price">650 ₽</p>
+        <h3 class="product-name">Струны<br>для гитары</h3>
+        <button class="btn">В корзину</button>
+      </article>
+      <!-- Можно добавить больше товаров -->
+    </div>
+    <button class="nav next" aria-label="Следующий товар">&#8594;</button>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<section class="newsletter-map-section">
+  <div class="newsletter">
+    <div class="newsletter-text">
+      <p class="newsletter-title">Хотите узнавать первым об акциях и скидках?</p>
+      <p class="newsletter-subtitle">Подпишитесь на нашу рассылку и покупайте с выгодой!</p>
+    </div>
+    <form class="newsletter-form" action="#" method="post">
+      <input type="email" name="email" placeholder="Введите ваш e-mail" required>
+      <button type="submit" aria-label="Отправить">
+        <svg width="24" height="24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="22" y1="12" x2="2" y2="12"/>
+          <polyline points="15 5 22 12 15 19"/>
+        </svg>
+      </button>
+    </form>
+  </div>
+  
+  <div class="section-divider"></div>
+
+  <h2 class="section-title">Наши магазины</h2>
+
+  <div class="map-container">
+    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aexample&source=constructor" 
+            frameborder="0" 
+            allowfullscreen 
+            aria-label="Карта магазинов"
+            loading="lazy"></iframe>
+  </div>
+</section>
+
+
+<div class="section-divider"></div>
+
+
+<section class="contact-section">
+  <h2 class="contact-title">Остались вопросы?</h2>
+  <p class="contact-subtitle">Напишите нам и мы<br>свяжемся с вами</p>
+  
+  <form class="contact-form" action="#" method="post" novalidate>
+    <label>
+      <span>Ваше имя</span>
+      <input type="text" name="name" placeholder="Ваше имя" required>
+    </label>
+    <label>
+      <span>Email</span>
+      <input type="email" name="email" placeholder="Email" required>
+    </label>
+    <label>
+      <span>Ваш комментарий</span>
+      <textarea name="comment" placeholder="Ваш комментарий" rows="4" required></textarea>
+    </label>
+    <button type="submit">Отправить</button>
+  </form>
+</section>
+
+
+<div class="section-divider"></div>
+
+
+<section class="custom-reviews-section">
+  <h2 class="reviews-title">Последние отзывы</h2>
+  <div class="reviews-wrapper">
+    <div class="review-item active">
+      <img src="img/ava1.png" alt="Анастасия П." class="review-avatar" />
+      <p class="review-text">
+        "Недавно купила гитару в магазине Октава и осталась в полном восторге! Заказала в выходной, а уже в понедельник мне доставили. Инструмент полностью соответствовал описанию, и даже больше! Внешний вид, качество сборки — все на высшем уровне. Очень приятно, что в заказе был небольшой подарок — тетрадь для нот. Определенно рекомендую этот магазин всем музыкантам!"
+      </p>
+      <span class="review-author">Анастасия П.</span>
+    </div>
+
+    <div class="review-item">
+      <img src="img/ava2.png" alt="Игорь С." class="review-avatar" />
+      <p class="review-text">
+        "Очень порадовало качество сервиса. Менеджер помог подобрать наушники, которые идеально подошли для моей гитары. Доставка была быстрой, упаковка надежной. Спасибо!"
+      </p>
+      <span class="review-author">Игорь С.</span>
+    </div>
+
+    <div class="review-item">
+      <img src="img/ava3.png" alt="Мария В." class="review-avatar" />
+      <p class="review-text">
+        "Быстрая доставка и отличный выбор! Буду заказывать снова."
+      </p>
+      <span class="review-author">Мария В.</span>
+    </div>
+  </div>
+
+  <div class="reviews-dots" role="tablist" aria-label="Переключатели отзывов">
+    <span class="dot active" data-index="0" role="tab" tabindex="0" aria-selected="true"></span>
+    <span class="dot" data-index="1" role="tab" tabindex="-1" aria-selected="false"></span>
+    <span class="dot" data-index="2" role="tab" tabindex="-1" aria-selected="false"></span>
+  </div>
+</section>
+
+</main>
+
+ <footer class="footer">
+    <div class="footer-column">
+      <img src="img/logo.png" alt="Octava" />
+      
+    </div>
+    <div class="footer-column">
+      <h3>Контактная информация</h3>
+      <p>Политика конфиденциальности</p>
+      <p>О компании</p>
+    </div>
+    <div class="footer-column">
+      <h3>Покупателям</h3>
+      <p>Доставка</p>
+      <p>Обмен, возврат, гарантия</p>
+    </div>
+    <div class="footer-column">
+      <h3>Адрес</h3>
+      <p>г. Всеволожск</p>
+      <p>ул. Шинников</p>
+    </div>
+  </footer>
+<script src="js.js"></script>
+<script src="js1.js"></script>
+<script src="js2.js"></script>
+</body>
+</html>
+
