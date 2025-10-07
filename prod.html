@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Все для музыки: инструменты, оборудование и аксессуары</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+  <div class="container header-container">
+    <div class="logo">
+      <img src="img/logo.png" alt="Octava логотип" />
+    </div>
+    <nav class="nav">
+  <button class="menu-toggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="menu-list">☰</button>
+  <ul class="menu-list" id="menu-list">
+    <li><a href="index.html">Главная</a></li>
+    <li><a href="prod.html">Каталог</a></li>
+    <li><a href="#">О нас</a></li>
+    <li><a href="#">Гарантия</a></li>
+  </ul>
+</nav>
+    <div class="header-icons">
+      <div class="icon-link">
+        <a href="#">Войти</a>
+        <a href="#">Избранное</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <main class="container">
+        <h1 class="page-title">Каталог музыкальных инструментов</h1>
+        
+        <div class="categories">
+            <button class="category-btn active" data-category="all">Все товары</button>
+            <button class="category-btn" data-category="guitars">Гитары</button>
+            <button class="category-btn" data-category="keyboards">Клавишные</button>
+            <button class="category-btn" data-category="accessories">Аксессуары</button>
+        </div>
+        
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Поиск инструментов и оборудования...">
+            <button id="search-btn">Найти</button>
+        </div>
+        
+        <div class="results-info">
+            Показано <span id="products-count">0</span> из <span id="total-products">0</span> товаров
+        </div>
+        
+        <section class="products-section" id="all-products">
+            <div class="products-grid" id="products-grid">
+                
+            </div>
+        </section>
+        
+        <section class="single-product" id="single-product-view">
+            <a href="#" class="back-btn" id="back-to-catalog">← Вернуться к каталогу</a>
+            <div id="single-product-content"></div>
+        </section>
+    </main>
+
+    <footer class="footer">
+    <div class="footer-column">
+      <img src="img/logo.png" alt="Octava" />
+      
+    </div>
+    <div class="footer-column">
+      <h3>Контактная информация</h3>
+      <p>Политика конфиденциальности</p>
+      <p>О компании</p>
+    </div>
+    <div class="footer-column">
+      <h3>Покупателям</h3>
+      <p>Доставка</p>
+      <p>Обмен, возврат, гарантия</p>
+    </div>
+    <div class="footer-column">
+      <h3>Адрес</h3>
+      <p>г. Всеволожск</p>
+      <p>ул. Шинников</p>
+    </div>
+  </footer>
+<script src="js.js"></script>
+<script src="js1.js"></script>
+<script src="js2.js"></script>
+
+    
+        
+
+</body>
+</html>
